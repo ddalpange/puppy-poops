@@ -1,0 +1,65 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "enabled": false
+    },
+    {
+      "matchPackagePrefixes": [
+        "@daangn/webview-auth-"
+      ],
+      "groupName": "Webview Auth",
+      "enabled": true
+    },
+    {
+      "matchPackageNames": [
+        "plantae"
+      ],
+      "matchPackagePrefixes": [
+        "@plantae/",
+        "@daangn/plantae-"
+      ],
+      "groupName": "Plantae",
+      "enabled": true
+    },
+    {
+      "matchPackagePrefixes": [
+        "@stackflow/",
+        "@daangn/stackflow-"
+      ],
+      "groupName": "Stackflow",
+      "enabled": true
+    },
+    {
+      "matchPackagePrefixes": [
+        "@seed-design/",
+        "@daangn/sprout-"
+      ],
+      "groupName": "Seed Design",
+      "enabled": true
+    },
+    {
+      "matchPackageNames": [
+        "@daangn/karrotbridge"
+      ],
+      "groupName": "Karrot Bridge",
+      "enabled": true
+    }
+  ],
+  "hostRules": [
+    {
+      "matchHost": "https://npm.pkg.github.com/",
+      "hostType": "npm",
+      "encrypted": {
+        "token": "wcFMA/xDdHCJBTolARAAjIb4YFNlahd9fK6gu82PxG8Ho0YglMe5YqZYK1rVZyDL+TxlZ8a2g/gxFBtJa7vlGDtw5HuZLWXK4khnIZZqek2ZxLXwH8H7j9cncAqHKbZH71EgKuE20vwXLSdqq72pM/6HQ/6+8veqVKeJ9g/LJ6fqx8S/ObA4PNmg+cB/cvT8XtJ9OOa17DLYOB81F6NLZxvAn2wYuCjND0/m2djZvlBvJI9ChSaIqzDOqXQRYotNm1/W0oiRy3y/p32x9BCL/uDHAKGlBWsOPoLICxOg3PREh0uMdWEhzY50sJhsWt16zf/IFFCfoYbAtbygVQLykfppJDiTq7mb1KFSSTwJ3Dmu+2XrOFnmO2RyCy/BbqfvCzVjJ5yXMS6gnT1M439uWnktJ798p5NHKS3J+szBqaa5ygz3u3gfNBVbiU72X/N/2QXuj9gOG/LWwaDjWb/t3tdd5YH+Kpr+tOzQsJ5NgLwAW2dz7BXxgSJ7lJRSM48WWm78MfoTpWWEYS//Lc6I20lGZ1rKdbpolKX9Lw7JNZ4nwl6Lgzg4wx1Z4qYElGFLlk+rUKAFEMRdADxNGsBU1XYimw/BkLr8ip1nRCJXoE/BGvLc8L7/hS9SGJKk9yxMzQ9BNsKfWKOjp4aiNX3y7kcTo4PJZ/MD9dLVJ23/Asgoh8JFYAdjps5FsXUTPivSiQE3J634mU+OkeiGa+ASGg39zQ/4OfTAkdS4/RXd/IOuVdgQBJ+PxcOCMEesGMTzrEkhhbPH2DIvKylpllZt3jMnifUYWIe0Vvj8agyGVLpSX5iqPlNq0r8+cBgrRnFdm8ty8nvbLD/zHzhoNXJSRg+C85/akdrHumfPa9FSNNY1NB92e7pTdp1e"
+      }
+    }
+  ],
+  "npmrc": "@daangn:registry=https://npm.pkg.github.com/"
+}

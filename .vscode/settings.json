@@ -1,0 +1,21 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  
+  // TypeScript
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // ESLint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+  ],
+}
